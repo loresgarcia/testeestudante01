@@ -31,8 +31,7 @@
 
 .container {
     margin: auto;
-    padding-left: 15%;
-    padding-top: 15%;
+    padding: 15% 15% 0 15%;
 }
 
 .cabecalho {
@@ -50,7 +49,7 @@
 }
 
 .skills_content {
-    padding: 6rem 4rem;
+    padding: 6rem 0;
     text-align: center;
 }
 
@@ -59,6 +58,7 @@
     padding: 0;
     display: flex;
     justify-content: space-between;
+    gap: 16px;
 }
 
 .skills__item {
@@ -68,3 +68,31 @@
 .skills__item h3 {
     margin-top: 1rem;
 }
+
+/* Seu CSS existente */
+
+/* Adicionando uma media query para telas menores */
+@media only screen and (max-width: 768px) {
+    .navbar .navbar_content {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navbar .navbar_content ul {
+        text-align: right;
+    }
+
+    .navbar .navbar_content li:not(:last-of-type) {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+
+    .container {
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+
+    /* Adicione mais ajustes conforme necessário para telas menores */
+}
+
+/* Outras media queries podem ser adicionadas para tamanhos diferentes se necessário */
