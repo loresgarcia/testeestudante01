@@ -68,31 +68,3 @@
 .skills__item h3 {
     margin-top: 1rem;
 }
-
-/* Seu CSS existente */
-
-/* Adicionando uma media query para telas menores */
-@media only screen and (max-width: 768px) {
-    .navbar .navbar_content {
-        flex-direction: column;
-        align-items: flex-end;
-    }
-
-    .navbar .navbar_content ul {
-        text-align: right;
-    }
-
-    .navbar .navbar_content li:not(:last-of-type) {
-        margin-right: 0;
-        margin-bottom: 1rem;
-    }
-
-    .container {
-        padding-left: 5%;
-        padding-top: 10%;
-    }
-
-    /* Adicione mais ajustes conforme necessário para telas menores */
-}
-
-/* Outras media queries podem ser adicionadas para tamanhos diferentes se necessário */
